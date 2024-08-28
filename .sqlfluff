@@ -1,0 +1,9 @@
+[sqlfluff]
+dialect = bigquery  # e.g., postgres, snowflake, bigquery
+
+[sqlfluff:templater]
+templater = dbt
+
+[sqlfluff:templater:dbt]
+profiles_dir = ~/.dbt  # Adjust this if your profiles directory is different
+project_dir = .  # This points to your dbt project directory
